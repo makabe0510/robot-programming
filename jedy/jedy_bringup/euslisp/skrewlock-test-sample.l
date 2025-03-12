@@ -4,6 +4,7 @@
 
 (defun connect-and-reset ()
   (unless (boundp '*jedy*)
+    (format t "jedy-init%")
     (jedy-init)
     )
   (send *ri* :servo-on)
@@ -60,8 +61,8 @@
   )
 
 (defun demo-all()
-  (send *ri* :send-stretch :value 30)
   (connect-and-reset)
+  (send *ri* :send-stretch :value 30)
   (unix:usleep (* 1000 3000))
   (demo-loop)
   )
