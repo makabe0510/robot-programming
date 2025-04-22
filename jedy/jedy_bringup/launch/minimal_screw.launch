@@ -1,6 +1,6 @@
 <launch>
 
-  <arg name="urdf_path" default="$(find screw_humanoid_module)/urdf/screw_humanoid_module.urdf" />
+  <arg name="urdf_path" default="$(find screw_humanoid_module)/urdf/screw_humanoid_module_fix.urdf" />
   <arg name="servo_config_path" default="$(find screw_humanoid_module)/config/servo_config.yaml" />
   <!-- <arg name="urdf_path" default="$(find jedy_description)/urdf/jedy.urdf" /> -->
   <!-- <arg name="servo_config_path" default="$(find jedy_description)/config/jedy_servo_config.yaml" /> -->
